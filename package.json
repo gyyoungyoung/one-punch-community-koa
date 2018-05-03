@@ -47,6 +47,7 @@
     "lint:test": "eslint test"
   },
   "dependencies": {
+    "bluebird": "^3.5.1",
     "bunyan": "^1.8.12",
     "dotenv": "^5.0.1",
     "elastic-apm-node": "^1.2.1",
@@ -54,6 +55,8 @@
     "koa": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.4.0",
+    "koa-views": "^6.1.4",
+    "mongoose": "^5.0.17",
     "swagger-jsdoc": "^1.9.7",
     "uuid": "^3.2.1"
   },

@@ -9,13 +9,16 @@ const apm = require('./apm');
 const Koa = require('koa');
 const bodyParser = require('koa-bodyparser');
 const cors = require('kcors');
+const views = require('koa-views');
 const errorHandler = require('./middlewares/errorHandler');
 const logMiddleware = require('./middlewares/log');
 const logger = require('./logger');
 const requestId = require('./middlewares/requestId');
 const responseHandler = require('./middlewares/responseHandler');
-const router = require('./routes');
+const index = require('./routes/index');
+const users = require('./routes/users');
 
+require('./services/mongoose_service');
 
 const app = new Koa();
 
@@ -41,10 +44,13 @@ app.use(
 app.use(responseHandler());
 app.use(errorHandler());
 app.use(logMiddleware({ logger }));
+app.use(views(__dirname + '/views', {
+  extension: 'html'
+}));
 
 // Bootstrap application router
-app.use(router.routes());
-app.use(router.allowedMethods());
+router.use('/', index.routes(), index.allowedMethods());
+router.use('/users', users.routes(), users.allowedMethods());
 
 function onError(err) {
   if (apm.active)

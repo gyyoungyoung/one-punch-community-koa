@@ -1,48 +1,4 @@
-<div align="center">
-  <a href="https://github.com/posquit0/koa-rest-api-boilerplate" title="Koa REST API Boilerplate">
-    <img alt="Koa REST API Boilerplate" src="http://crocodillon.com/images/blog/2015/asynchronous-callbacks-in-koa--twitter.png" width="240px" />
-  </a>
-  <br />
-  <h1>Koa REST API Boilerplate</h1>
-</div>
-
-<p align="center">
-  Boilerplate for Node.js Koa RESTful API application with Docker, Swagger, Jest, Coveralls, and Circle CI
-</p>
-
-<div align="center">
-  <a href="https://circleci.com/gh/posquit0/koa-rest-api-boilerplate">
-    <img alt="CircleCI" src="https://circleci.com/gh/posquit0/koa-rest-api-boilerplate.svg?style=shield" />
-  </a>
-  <a href="https://coveralls.io/github/posquit0/koa-rest-api-boilerplate">
-    <img src="https://coveralls.io/repos/github/posquit0/koa-rest-api-boilerplate/badge.svg" alt='Coverage Status' />
-  </a>
-  <a href="https://david-dm.org/posquit0/koa-rest-api-boilerplate">
-    <img alt="npm" src="https://img.shields.io/david/posquit0/koa-rest-api-boilerplate.svg?style=flat-square" />
-  </a>
-  <a href="https://opensource.org/licenses/mit-license.php">
-    <img alt="MIT Licence" src="https://badges.frapsoft.com/os/mit/mit.svg?v=103" />
-  </a>
-  <a href="https://github.com/ellerbrock/open-source-badge/">
-    <img alt="Open Source Love" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" />
-  </a>
-</div>
-
-<br />
-
-**Koa REST API Boilerplate** is a highly opinionated boilerplate template for building RESTful API application with Koa.
-
-This boilerplate include the following features:
-
-- Multi-process clustering with production-ready process manager [PM2](http://pm2.keymetrics.io/)
-- Log rotation and log management using [Bunyan](https://github.com/trentm/node-bunyan)
-- A super small and optimized [Docker](https://www.docker.com/) image based on Alpine image
-- [Swagger](https://swagger.io/) API documentation based on JSDoc
-- Continuous integration and delivery using [CircleCI](https://circleci.com/)
-- Unit Test and Integration Test along with Test Coverage using [Jest](https://facebook.github.io/jest/) testing framework
-
----
-
+## 郭阳@武汉理工大学 旅游和社交平台后端
 
 ## Getting Started
 
@@ -96,23 +52,3 @@ $ yarn lint:test                      # Lint test sourcecode
 $ yarn pack
 ```
 
-
-## Contributing
-
-This project follows the [**Contributor Covenant**](http://contributor-covenant.org/version/1/4/) Code of Conduct.
-
-#### Bug Reports & Feature Requests
-
-Please use the [issue tracker](https://github.com/posquit0/koa-rest-api-boilerplate/issues) to report any bugs or ask feature requests.
-
-
-## Contact
-
-If you have any questions, feel free to join me at [`#posquit0` on Freenode](irc://irc.freenode.net/posquit0) and ask away. Click [here](https://kiwiirc.com/client/irc.freenode.net/posquit0) to connect.
-
-
-## License
-
-Provided under the terms of the [MIT License](https://github.com/posquit0/koa-rest-api-boilerplate/blob/master/LICENSE).
-
-Copyright © 2018, [Byungjin Park](http://www.posquit0.com).
